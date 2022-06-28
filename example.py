@@ -1,4 +1,4 @@
-json = {
+message = {
     "data": [
         {
             "created_at": "2022-06-27T19:51:53.000Z",
@@ -60,11 +60,13 @@ json = {
 }
 
 
-message = {
+message_data = {
             "created_at": "2022-06-27T19:47:12.000Z",
             "id": "1541508464052142088",
-            "text": "@JoaoFutTrader Make sure you have a good heavy table for the steering wheel. It's so annoying to play in a shitty light ikea table \ud83d\ude02\n\nThe best is a rig but that's a big investment"
+            "text": "This is a test message with a UTF-16 smiley \ud83d\ude02"
         }
 
+text_result = "This is a test message with a UTF-16 smiley "
 
-emoji_text = "@JoaoFutTrader Make sure you have a good heavy table for the steering wheel. It's so annoying to play in a shitty light ikea table \ud83d\ude02\n\nThe best is a rig but that's a big investment"
+
+text_emoji = "This is a test message with a UTF-16 smiley \ud83d\ude02"

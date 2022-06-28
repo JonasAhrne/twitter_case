@@ -5,34 +5,24 @@ import example
 
 class Test(unittest.TestCase):
 
-    @classmethod
-    def setUpClass(cls):
-        print('setupClass')
-
-    @classmethod
-    def tearDownClass(cls):
-        print('teardownClass')
-
     def setUp(self):
-        pass
+        self.message = example.message
+        self.message_data = example.message_data
+        self.text_result = example.text_result
+        self.text_emoji = example.text_emoji
 
-    def tearDown(self):
-        pass
+    def test_extract_emoji(self):
+        self.assertEqual(methods.extract_emoji(self.text_emoji),'\ud83d\ude02')  
 
-    def test_emoji(self):
-        self.assertEqual(10, 10)
-
-    def test_schema(self):
-        self.assertEqual(10, 10)
+    def test_decodeutf16(self):
+        self.assertEqual(methods.decode_utf18(self.message_data['text']), self.text_result)
 
     def test_api(self):
-        with patch('methods.create_url') as mocked_get:
-            mocked_get.return_value.ok = True
-            mocked_get.return_value.text = 'Success'
+        with patch('methods.call_api_to_pubsub') as mocked_get:
+            mocked_get.return_value.ok = '200'
+            mocked_get.return_value.text = self.message
 
-            #schedule = methods.create_url('key')
-
-            mocked_get.assert_called_with('http://url.com/1193924/328913999s89723')
+            # Need mock call for API
 
 if __name__ == '__main__':
     unittest.main() 
