@@ -39,7 +39,9 @@ def decode_utf18(line):
     return line.encode('ascii', 'ignore').decode('ascii')
 
 def extract_emoji(text):
-    
+    """
+    extract emojis from text and store in comma seperated string
+    """
     emoji_string = ''
     data = regex.findall(r'\X', text)
     for word in data:
@@ -49,7 +51,9 @@ def extract_emoji(text):
     return emoji_string
 
 def pass_to_pubsub(message_json):
-    
+    """
+    Pass json object to pubsub for ingestion
+    """
     os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = config.credentials_path
 
     publisher = pubsub_v1.PublisherClient()
@@ -67,5 +71,22 @@ def pass_to_pubsub(message_json):
         future = publisher.publish(config.pubsub_topic, body, **attributes)
         print(f'published message id {future.result()}')
 
-pass_to_pubsub(example.json)
+def call_api_to_pubsub(url):
+    """
+    1. use URL to connect to twitter API
+    2. Loop through json response and call pass_to_pubsub method to push each 
+       individual message to pub/sub
+    """
+    next_token = 'N/A'
+    while next_token != '' or next_token == 'N/A':
+        
+        if next_token == 'N/A': # First run
+            json_response = connect_to_endpoint(url)
+        else:
+            json_response = connect_to_endpoint(f'{url}&next_token={next_token}')
+
+        #print(json_response["meta"]["next_token"])
+        pass_to_pubsub(json_response)
+        next_token = (json_response["meta"]["next_token"])
+
 
