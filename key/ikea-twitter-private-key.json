@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "ikea-twitter-220",
+  "private_key_id": "53c5b3c8974c5b8278058f1045a9d7534b28e068",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDBKXwGFVzpLecI\n+SQPxMmqXgGi4tbjfyaUmR5cO6Q6Pur5T9fdUrJCQ4fAoxfCqN7eEo5p9onCCZoo\nRNcA124W/3rhaxJ+6LqnNhlkZFRVh+ohpAYJSrO5mtpst+pfilMb0EqkpssPmLY3\nI6E/FOaPnI1wO013DmL/vCRkZ63W8uUyV7yT85d97u4CfjAzS3jhkIErnS+FFIyY\nfYIPIurJQBV+Xwe3EyhmAqqhd2EESxbjX85KDDoSu3YYaqHLy7eNF5NMfJav91SU\nabz6LdKW4u0jnVzOLdAz2wbNKWrkAZJlsyiCI4TjkPATutjk/pLYvYA9cyZ7WgMA\nel71wl6vAgMBAAECggEAWLdI8zJUnfQrLH/hBC0JwmmyrrEoqQv5GD7LJultoCLN\noPv+1PPqU2zYqK0/eHQ/CBfVuO02kBwA5YXYidZoBcAJHAclU4xoTewW9XjvEul9\nqz2+V/4rVY+9yjkeOAs76IZeAglpMhydc+21XVeoHUV14JocFhZRectbm5HS0emo\n+dtKeOwt3GIoeJpoZBhrdPZlUW7CJeHHgAjFWTXvsbwq8Q+0DxsTwgSA8HGBXwLK\nAcjylyMx4wOYq6ppFIrrkBZa1fpe9TZcYGJpDP1jmViOCTAnRw3GHhXj1A0Nn8qp\nw+YWCV/jwFfRa+IXKLSertL5RMFR6y5mbIcApPoLIQKBgQDhYq20+To2+I6dsEiS\n3U1nHVywA+eEkEVnPB+SeYLFjou8yP0F2Uso7sWFkm8KwOiRhiVn78gUZ807j+zt\n1s4fpJ5zLAD0s1CKq5ltMu9Ap9hQCIfYoHmYljfQ6sPGIh4NUtktT14V4SiAwqXc\nuKR7aJYcEaEExPdGtWWAwurq9QKBgQDbZk1bSqcVrB/w1nRWwdzeqB7F9snPqIl+\n0VvzciYbtN8JKNLxpiHJQ0EQ4Hj2Jwt9QzY2UNPWsEsJpx3lf7lQgjoYgOtP7zPS\nZBy+AgtMCJbQqkoSupJSzIRWj556BWp2sggyp8iNy6O3cQflQQm1KMQWGQUSIIZx\nW0NLkqckkwKBgQCCTIogFfWR0iChCUjrnwUgl9j96UPvX3jANgIKrDTuAXrHqWqd\n9wF8qI2Iqx+HF/9cIjF95SHGqjv8MzjGR2ji4ki4TLhAv2nQwWPxvYCT4HUtz8C5\nfAzQKggav55u7UpyaXMkvr2l6IWB6wX4lMaCkfQ2RfrQxw4t0rDbv9QQAQKBgEOQ\nT4YriSS9auCpyg3liXTv5Pols6RFTIJHSr+/iUjC/GQ/tCZCeOkX0vO1jMqQ35Ll\nnc5AOdxFUfZZBnXkTVcjo2xkVxK4oQbLWaaRzpTNmFQN/N2joufon2BgvfbpsA15\nadjfnn08FuCo6DuLOcgWE7ySW+NnLL+/0Qt20A4NAoGBAKgJAfb3SlRkX904hfPt\nPEGxycWkBteOSz0ie1692oTCfwO300WAMkBH8rmopBjGFZKnjljwsEWClH7tRLAk\nJb2OMRO/zZOyYHc9HNt1b4PKFWWliOQ7ndRQx26w+SP9pUHb5Ck5OFpVd2CUpX8T\n2TtA6CY7D6NxEqIdba3AkdR6\n-----END PRIVATE KEY-----\n",
+  "client_email": "twitter-service-account@ikea-twitter-220.iam.gserviceaccount.com",
+  "client_id": "114218012550681056073",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/twitter-service-account%40ikea-twitter-220.iam.gserviceaccount.com"
+}
